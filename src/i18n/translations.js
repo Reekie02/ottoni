@@ -8,7 +8,7 @@ const translations = {
             tagline1: "Sapori autentici, creati con passione,",
             tagline2: "ogni giorno,",
             tagline3: "come a casa.",
-            meta: ["Via Cernaia 3", "Torino Centro", "Mar — Dom"],
+            meta: ["Via Cernaia 3", "Torino Centro", "Lun — Sab"],
             scorri: "Scorri",
         },
         filosofia: {
@@ -91,7 +91,7 @@ const translations = {
             tagline1: "Authentic flavours, crafted with passion,",
             tagline2: "every day,",
             tagline3: "like home.",
-            meta: ["Via Cernaia 3", "Turin Centre", "Tue — Sun"],
+            meta: ["Via Cernaia 3", "Turin Centre", "Mon — Sat"],
             scorri: "Scroll",
         },
         filosofia: {
@@ -174,7 +174,7 @@ const translations = {
             tagline1: "Saveurs authentiques, créées avec passion,",
             tagline2: "chaque jour,",
             tagline3: "comme à la maison.",
-            meta: ["Via Cernaia 3", "Centre de Turin", "Mar — Dim"],
+            meta: ["Via Cernaia 3", "Centre de Turin", "Lun — Sam"],
             scorri: "Défiler",
         },
         filosofia: {
@@ -257,7 +257,7 @@ const translations = {
             tagline1: "Sabores auténticos, creados con pasión,",
             tagline2: "cada día,",
             tagline3: "como en casa.",
-            meta: ["Via Cernaia 3", "Centro de Turín", "Mar — Dom"],
+            meta: ["Via Cernaia 3", "Centro de Turín", "Lun — Sáb"],
             scorri: "Desplazar",
         },
         filosofia: {
@@ -340,7 +340,7 @@ const translations = {
             tagline1: "真实的风味，用心烹制，",
             tagline2: "每一天，",
             tagline3: "如家一般温暖。",
-            meta: ["切尔纳亚街3号", "都灵市中心", "周二 — 周日"],
+            meta: ["切尔纳亚街3号", "都灵市中心", "周一 — 周六"],
             scorri: "滚动",
         },
         filosofia: {
