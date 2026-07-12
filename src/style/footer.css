@@ -1,0 +1,64 @@
+@import './global.css';
+
+.foot {
+    @apply
+    bg-ink-2
+    text-[rgba(241,234,212,0.7)]
+    pt-12.5
+    pb-7.5
+    px-10
+    border-t border-[rgba(241,234,212,0.1)]
+}
+
+.foot-inner {
+    @apply
+    max-w-7xl
+    mx-auto
+    my-0
+    flex
+    items-end
+    justify-between
+    gap-10
+    flex-wrap
+}
+
+.foot-brand {
+    @apply
+    font-serif
+    text-[28px]
+    text-cream
+    tracking-[.08em]
+}
+
+.foot-meta {
+    @apply
+    font-sans
+    text-[11px]
+    tracking-[.22em]
+    uppercase
+}
+
+.foot-social {
+    @apply
+    flex
+    gap-4
+}
+
+.foot-social a {
+    @apply
+    w-9
+    h-9
+    border border-[rgba(241,234,212,0.25)]
+    rounded-full
+    flex
+    items-center
+    justify-center
+    text-cream
+    transition-colors
+    duration-300
+    ease-in-out
+
+    hover:bg-gold
+    hover:text-ink
+    hover:border-gold
+}

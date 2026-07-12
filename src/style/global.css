@@ -1,0 +1,145 @@
+@import "tailwindcss";
+/* === Ottoni — design tokens === */
+:root {
+  --cream: #f1ead4;
+  --cream-2: #ebe1c5;
+  --paper: #f6efd9;
+  --ink: #1d3327;          /* forest green */
+  --ink-2: #244033;
+  --moss: #5d6f5a;          /* ottantafame band */
+  --gold: #a47a3a;          /* ochre */
+  --gold-soft: #c69a52;
+  --rust: #8a4a2a;
+  --muted: #6a6553;
+  --line: rgba(29, 51, 39, 0.18);
+  --shadow: 0 30px 60px -30px rgba(29, 51, 39, 0.35);
+  --announce: rgba(241,234,212,0.15);
+
+  --serif: "Cormorant Garamond", "EB Garamond", Georgia, serif;
+  --sans: "Manrope", "Helvetica Neue", Arial, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+@theme{
+    --font-serif: var(--serif);
+    --font-sans: var(--sans);
+    --font-mono: var(--mono);
+    --color-cream: var(--cream);
+    --color-cream-2: var(--cream-2);
+    --color-paper: var(--paper);
+    --color-ink: var(--ink);
+    --color-ink-2: var(--ink-2);
+    --color-moss: var(--moss);
+    --color-gold: var(--gold);
+    --color-gold-soft: var(--gold-soft);
+    --color-rust: var(--rust);
+    --color-muted: var(--muted);
+    --color-line: var(--line);
+    --color-shadow: var(--shadow);
+    --color-announce: var(--announce);
+
+    --breakpoint-nav-md: 900px;
+    --breakpoint-xs: 480px;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+/* paper grain — very subtle */
+body::before {
+  content: "";
+  position: fixed; inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background-image:
+    radial-gradient(rgba(29,51,39,0.045) 1px, transparent 1px),
+    radial-gradient(rgba(29,51,39,0.025) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 2px;
+  mix-blend-mode: multiply;
+  opacity: 0.55;
+}
+
+
+
+
+
+/* utility */
+.smallcaps {
+  font-variant-caps: all-small-caps;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+.allcaps {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-weight: 600;
+}
+.eyebrow {
+  font-family: var(--sans);
+  text-transform: uppercase;
+  letter-spacing: 0.32em;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--gold);
+}
+.divider-leaf {
+  display: inline-flex; align-items: center; gap: 14px;
+  color: var(--gold);
+}
+.divider-leaf::before,
+.divider-leaf::after {
+  content: ""; 
+  height: 1px; 
+  width: 40px; 
+  background: currentColor;
+}
+
+
+
+
+
+/* reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.7, 0.2, 1),
+              transform 0.9s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.reveal.in {
+  opacity: 1; transform: translateY(0);
+}
+
+
+
+
+/* === section base === */
+section { position: relative; z-index: 2; }
+.section-head {
+  @apply
+  text-center
+  pt-[100px]
+  pb-[40px]
+  px-[40px]
+}
+.section-head h2 {
+  @apply
+  font-serif
+  text-[clamp(40px,6vw,76px)]
+  font-medium
+  mt-4
+  mb-0
+  mx-0
+  tracking-[0.02em]
+  text-ink
+}

@@ -1,0 +1,235 @@
+@import "../style/global.css";
+
+/* ========================= *
+   NAV
+* ========================= */
+.nav{
+  transition: background 0.4s ease, padding 0.4s ease, border-color 0.4s ease;
+  @apply
+  fixed
+  top-0
+  left-0
+  right-0
+  z-50
+  px-10
+  py-5.5
+  flex
+  items-center
+  justify-between
+  border-b
+  border-b-transparent
+  max-nav-md:py-3.5
+  max-nav-md:px-5
+}
+
+.nav.scrolled {
+  background: rgba(241, 234, 212, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 14px 40px;
+  border-color: var(--line);
+}
+
+.nav-brand .sax-mark {
+  @apply 
+  text-ink
+  w-8
+  h-8
+}
+
+.nav-brand{
+  @apply
+  flex
+  items-center
+  gap-3
+  font-serif
+  text-[22px]
+  tracking-[0.08em]
+  font-semibold
+  uppercase
+  no-underline
+}
+
+.nav-links{
+  @apply
+  max-nav-md:hidden
+  flex
+  gap-9
+  font-sans
+  text-[12px]
+  uppercase
+  tracking-[0.22em]
+  font-medium
+}
+
+.nav-links a{
+  @apply
+  text-ink
+  no-underline
+  relative
+  py-1.5
+  px-0
+}
+
+.nav-links a::after {
+  content: ""; position: absolute;
+  left: 0; right: 0; bottom: 0;
+  height: 1px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.4s cubic-bezier(0.7, 0, 0.2, 1);
+}
+.nav-links a:hover::after { 
+  transform: scaleX(1); 
+}
+
+.nav-cta{
+    @apply
+    font-sans
+    text-[11px]
+    uppercase
+    tracking-[0.24em]
+    py-3
+    px-5.5
+    border
+    border-ink
+    bg-transparent
+    max-xs:bg-ink
+    max-xs:text-cream
+    cursor-pointer
+    rounded-full
+    hover:bg-ink
+    hover:text-cream
+    transition-colors
+    duration-300
+    ease-in
+    font-semibold
+}
+
+.lang-switcher{
+  @apply
+  flex
+  items-center
+}
+
+.lang-btns{
+  @apply
+  max-nav-md:hidden
+  flex
+  items-center
+  gap-0.5
+}
+
+.lang-btn{
+  @apply
+  font-sans
+  text-[10px]
+  tracking-[0.14em]
+  font-semibold
+  uppercase
+  py-[5px]
+  px-[7px]
+  text-muted
+  hover:text-ink
+}
+
+.lang-btn.active{
+    background: rgba(164,122,58,0.1);
+    @apply
+    text-gold
+}
+
+.lang-dropdown-wrap{
+    @apply
+    hidden
+    max-nav-md:block
+}
+
+.lang-dropdown{
+    @apply
+    relative
+}
+
+.lang-dropdown-trigger{
+    border: 1px solid rgba(29,51,39,0.28);
+    @apply
+    flex
+    items-center
+    gap-[5px]
+    font-sans
+    text-[11px]
+    tracking-[0.14em]
+    font-semibold
+    cursor-pointer
+    text-ink
+    bg-transparent
+    py-[7px]
+    px-[11px]
+    rounded-md
+}
+
+.lang-dropdown-trigger:hover{
+    background: rgba(164,122,58,0.06);
+    border-color: var(--gold); 
+}
+
+.lang-dropdown-trigger svg{
+    transition: transform 0.3s ease;
+    flex-shrink: 0;;
+}
+
+.lang-dropdown-trigger svg.rotated {
+    transform: rotate(180deg);
+}
+
+.lang-dropdown-menu{
+    box-shadow: 0 12px 32px -8px rgba(29,51,39,0.18);
+    @apply
+    absolute
+    top-[calc(100%+6px)]
+    right-0
+    bg-cream
+    border
+    border-line
+    rounded-lg
+    overflow-hidden
+    z-200
+    min-w-[90px]
+    animate-[dropIn_0.7s_cubic-bezier(0.2,0.7,0.2,1)_both]
+}
+@keyframes dropIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lang-dropdown-item {
+    @apply
+    block
+    w-full
+    text-left
+    font-sans
+    text-[11px]
+    font-semibold
+    text-muted
+    hover:text-ink
+    bg-transparent
+    py-[11px]
+    px-4
+    cursor-pointer
+    transition-colors
+    duration-150
+    ease-in
+    border-0
+    border-b
+    border-b-line
+    last:border-b-0
+}
+.lang-dropdown-item:hover{
+    background: rgba(164,122,58,0.07);
+}
+
+.lang-dropdown-item.active{
+  @apply
+  text-gold
+}

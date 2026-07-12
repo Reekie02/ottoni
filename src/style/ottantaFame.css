@@ -1,0 +1,64 @@
+@import './global.css';
+
+.band {
+    @apply
+    bg-moss
+    text-cream
+    py-15
+    px-0
+    overflow-hidden
+    relative
+    border-b border-t
+    border-[rgba(29,51,39,0.2)]
+}
+
+.band-marquee {
+    animation: marquee 30s linear infinite;
+    @apply
+    flex
+    gap-17.5
+    whitespace-nowrap
+    hover:[animation-play-state:paused]
+}
+
+.band-item {
+    @apply
+    inline-flex
+    items-center
+    gap-17.5
+    font-serif
+    text-[clamp(56px,9vw,130px)]
+    font-semibold
+    tracking-[0.04em]
+    leading-none
+}
+
+.band-item .hash{
+    @apply
+    text-gold-soft
+}
+
+.band-item .star {
+    @apply
+    w-5.5
+    h-5.5
+    opacity-70
+}
+
+.band-meta {
+    @apply
+    text-center
+    mt-7
+    font-serif
+    text-lg
+    italic
+    text-[rgba(241,234,212,0.8)]
+}
+
+.band-meta strong {
+    @apply
+    text-gold-soft
+    font-semibold
+    not-italic
+    tracking-[0.06em]
+}

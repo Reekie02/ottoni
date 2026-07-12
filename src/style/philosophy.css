@@ -1,0 +1,71 @@
+@import "./global.css";
+
+.filosofia {
+    @apply
+    pt-15
+    px-10
+    pb-[120px]
+    grid
+    grid-cols-[1fr_1fr]
+    gap-20
+    max-w-[1280px]
+    max-nav-md:grid-cols-[1fr]
+    max-nav-md:gap-10
+    max-nav-md:pt-10
+    max-nav-md:px-6
+    max-nav-md:pb-20
+    my-0
+    mx-auto
+    items-center
+}
+
+.filosofia-quote{
+    @apply
+    font-serif
+    text-[clamp(28px,3.4vw,46px)]
+    leading-tight
+    font-medium
+    text-ink
+    italic
+}
+
+.filosofia-quote em{
+    font-style: normal;
+    background: linear-gradient(120deg, transparent 0% 8%, rgba(164, 122, 58, 0.22) 8% 92%, transparent 92%);
+    padding: 0 6px;
+}
+
+.filosofia-body {
+    @apply
+    text-lg
+    leading-[1.7]
+    text-ink-2
+    font-medium
+}
+
+.filosofia-body p + p{
+    @apply
+    mt-5.5
+}
+
+.filosofia-sig{
+    @apply
+    flex
+    items-center
+    gap-3.5
+    mt-9
+    font-sans
+    uppercase
+    text-[11px]
+    tracking-[0.24em]
+    text-muted   
+}
+
+
+.filosofia-sig::before {
+    @apply
+    content-[""]
+    h-px
+    w-9
+    bg-gold
+}

@@ -1,0 +1,401 @@
+@import "./global.css";
+
+.menu{
+    @apply
+    bg-paper
+    border-t
+    border-b
+    border-line
+    pb-[120px] pt-0 px-0
+    relative
+}
+
+.menu-tabs{
+    @apply
+    flex
+    flex-wrap
+    justify-center
+    gap-1.5
+    px-10
+    py-0
+    mt-5
+    max-nav-md:px-4
+    max-xs:gap-0.5
+}
+
+.menu-tab{
+    font-variant-caps: all-small-caps;
+    @apply
+    font-serif
+    tracking-[.18em]
+    font-semibold
+    text-lg
+    bg-transparent
+    border-none
+    text-muted
+    py-3
+    px-5.5
+    cursor-pointer
+    rounded-full
+    transition-colors
+    duration-250
+    ease-in
+    relative
+    hover:text-ink
+    max-nav-md:text-[15px]
+    max-nav-md:px-0
+    max-xs:text-[13px]
+    max-xs:py-2
+    max-xs:px-2.5
+    max-xs:tracking-[.12em]
+}
+
+.menu-tab.active{
+    @apply
+    text-ink
+    before:absolute
+    before:left-1/2
+    before:-translate-x-1/2
+    before:bottom-[4px]
+    before:bg-gold
+    before:rounded-full
+    before:w-1.5
+    before:h-1.5
+}
+
+.menu-body{
+    @apply
+    max-w-[1100px]
+    mx-auto
+    mt-15 mb-0
+    py-0
+    px-10
+    grid
+    gap-x-[80px] gap-y-[60px]
+    max-nav-md:gap-12
+    relative
+    max-nav-md:px-4
+    max-nav-md:mt-10
+}
+
+.menu-body--two-col{
+    @apply
+    grid-cols-[1fr_1fr]
+    max-nav-md:grid-cols-[1fr]
+}
+@media (max-width: 900px){
+    .menu-body,
+    .menu-body--two-col,
+    .menu-body--single {
+        justify-content: unset;
+        @apply
+        py-0
+        px-5
+        gap-12
+        mt-10
+    }
+}
+.menu-body,
+  .menu-body--two-col,
+  .menu-body--single {
+    @apply
+    max-xs:py-0
+    max-xs:px-4
+  }
+
+.menu-body--single{
+    @apply
+    grid-cols-[minmax(0,720px)]
+    justify-center
+}
+
+.menu-pane{
+    @apply
+    relative
+}
+
+.menu-col{
+    @apply
+    flex
+    flex-col
+    gap-15
+    max-nav-md:gap-12
+}
+
+.menu-section-title{
+    font-variant-caps: all-small-caps;
+    @apply
+    font-serif
+    text-gold
+    tracking-[.22em]
+    font-semibold
+    text-xl
+    max-xs:text-[17px]
+    m-0
+    mb-2
+    text-center
+}
+
+.menu-section-line{
+    @apply
+    h-px
+    bg-gold
+    opacity-[0.6]
+    w-15
+    mx-auto
+    mt-0
+    mb-7
+}
+
+.dish {
+    @apply
+    grid
+    grid-cols-[1fr_auto]
+    items-baseline
+    gap-5
+    max-xs:gap-2
+    max-nav-md:py-3
+    max-nav-md:gap-3
+    py-3.5 px-0
+    border-b
+    border-dashed
+    border-[rgba(29,51,39,0.15)]
+    cursor-default
+    last:border-b-0
+    transition-all
+    duration-250
+    ease-in-out
+    hover:pl-3
+    hover:bg-[rgba(164,122,58,0.06)]
+}
+
+.dish-name {
+    font-variant-caps: all-small-caps;
+    @apply
+    font-serif
+    tracking-[.08em]
+    text-[19px]
+    max-nav-md:text-[16px]
+    font-medium
+    text-ink
+    max-xs:text-[15px]
+}
+
+.dish-desc {
+  @apply
+  text-sm
+  text-muted
+  italic
+  mt-1
+  leading-normal
+  max-xs:text-[13px]
+}
+
+.dish-tag {
+    @apply
+    inline-block
+    font-sans
+    text-[9px]
+    uppercase
+    tracking-[.2em]
+    ml-2
+    py-0.5
+    px-1.5
+    border border-gold
+    text-gold
+    rounded-sm
+    align-middle
+}
+
+.dish-price {
+    @apply
+    font-serif
+    font-medium
+    text-ink
+    text-lg
+    whitespace-nowrap
+    max-nav-md:text-[16px]
+    max-xs:text-[15px]
+}
+
+.menu-note {
+    @apply
+    mt-15
+    text-center
+    italic
+    text-muted
+    text-sm
+    max-nav-md:px-6
+    max-nav-md:py-0
+    max-nav-md:mt-10
+}
+
+
+
+/* === menu poster === */
+.menu-poster-wrap {
+  @apply
+  max-w-[1100px]
+  mt-7.5
+  mx-auto
+  mb-0
+  px-10
+  py-0
+  text-center
+}
+
+.menu-poster{
+    box-shadow:
+    0 1px 0 rgba(29,51,39,0.08),
+    0 30px 60px -20px rgba(29,51,39,0.35),
+    0 60px 120px -40px rgba(29,51,39,0.25);
+    transition: transform 0.6s cubic-bezier(0.2, 0.7, 0.2, 1), box-shadow 0.4s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+    @apply
+    block
+    relative
+    rounded-sm
+    overflow-hidden
+    bg-cream
+    cursor-zoom-in
+    before:absolute
+    before:inset-0
+    before:pointer-events-none
+    before:bg-[linear-gradient(135deg,rgba(255,255,255,0.18)_0%,transparent_35%,transparent_65%,rgba(0,0,0,0.06)_100%)]
+    before:z-2
+}
+
+.menu-poster img {
+    user-select: none;
+    -webkit-user-drag: none;
+    @apply
+    w-full
+    h-auto
+    block
+}
+
+.menu-poster-overlay {
+    @apply
+    absolute
+    right-4.5
+    bottom-4.5
+    inline-flex
+    items-center
+    gap-2
+    bg-[rgba(29,51,39,0.85)]
+    text-cream
+    font-sans
+    text-[11px]
+    tracking-[.22em]
+    uppercase
+    py-2.5
+    px-3.5
+    rounded-full
+    z-3
+    opacity-0
+    translate-y-2
+    transition-all
+    duration-400
+    ease-in-out
+}
+
+.menu-poster:hover .menu-poster-overlay {
+    @apply
+    opacity-100
+    translate-y-0
+}
+
+.menu-poster-caption {
+    @apply
+    mt-4.5
+    italic
+    text-sm
+    text-muted
+    tracking-[.04em]
+}
+
+.menu-divider {
+    @apply
+    text-center
+    mt-22.5
+    mx-auto
+    mb-0
+    text-gold
+}
+
+.menu-divider .smallcaps{
+    @apply
+    text-[16px]
+}
+
+/* FULL SCREEN */
+
+.lightbox {
+    @apply
+    fixed
+    z-1000
+    inset-0
+    bg-[rgba(20,30,25,0.92)]
+    backdrop-blur-sm
+    flex
+    items-center
+    justify-center
+    p-10
+    animate-[lbFade_0.3s_ease_both]
+    cursor-zoom-out
+}
+@keyframes lbFade { 
+    from { 
+        opacity: 0; 
+    } 
+    to { 
+        opacity: 1;
+    } 
+}
+
+.lightbox img {
+    box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+    @apply
+    max-w-[96vw]
+    max-h-[92vh]
+    w-auto
+    h-auto
+    rounded-xs
+    cursor-default
+    animate-[lbZoom_0.45s_cubic-bezier(0.2,0.7,0.2,1)_both]
+}
+@keyframes lbZoom { 
+  from { 
+    transform: scale(0.94); 
+    opacity: 0; 
+  }
+  to {  
+    transform: scale(1); 
+    opacity: 1; 
+  }
+}
+
+.lightbox-close {
+    @apply
+    absolute
+    top-5.5
+    right-6.5
+    w-11
+    h-11
+    bg-[rgba(241,234,212,0.12)]
+    rounded-full
+    text-cream
+    border border-[rgba(241,234,212,0.25)]
+    font-serif
+    text-[28px]
+    leading-none
+    cursor-pointer
+    transition-all
+    duration-300
+    ease-in-out
+    hover:bg-gold
+    hover:text-ink
+    hover:border-gold
+}
+

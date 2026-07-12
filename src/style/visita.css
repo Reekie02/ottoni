@@ -1,0 +1,252 @@
+@import './global.css';
+
+.visita {
+    @apply
+    bg-ink
+    text-cream
+    py-30
+    px-10
+    relative
+
+    before:absolute
+    before:inset-0
+    before:bg-[radial-gradient(rgba(241,234,212,0.06)_1px,transparent_1px)]
+    before:bg-size-[4px_4px]
+    before:opacity-30
+    before:pointer-events-none
+}
+
+.visita-grid {
+    @apply
+    max-w-7xl
+    mx-auto
+    grid
+    max-nav-md:grid-cols-1
+    grid-cols-[1.1fr_1fr]
+    gap-20
+    max-nav-md:gap-12.5
+    items-center
+    relative
+}
+
+.visita h2 {
+    @apply
+    font-serif
+    text-[clamp(48px,6vw,96px)]
+    mt-0 mx-0 mb-5
+    font-medium
+    sm:leading-none
+}
+
+.visita-sub {
+    @apply
+    italic
+    text-[22px]
+    text-[rgba(241,234,212,0.7)]
+    mb-12.5
+    mt-0 mx-0
+    max-w-[480px]
+    leading-normal
+}
+
+.visita-block {
+    @apply
+    flex
+    flex-col
+    gap-1.5
+    py-6 px-0
+    border-t
+    border-[rgba(241,234,212,0.15)]
+    last-of-type:border-b
+}
+
+.visita-label {
+    @apply
+    font-sans
+    text-[11px]
+    tracking-[0.28em]
+    uppercase
+    text-gold-soft
+}
+
+.visita-value {
+    @apply
+    font-serif
+    text-[22px]
+    text-cream
+}
+
+.visita-value small {
+    @apply
+    text-[rgba(241,234,212,0.55)]
+    text-sm
+    ml-2
+    italic
+}
+
+.visita-cta {
+    @apply
+    inline-flex
+    items-center
+    gap-3.5
+    mt-10
+    bg-gold
+    text-ink
+    font-sans
+    text-xs
+    tracking-[0.26em]
+    uppercase
+    py-4.5
+    px-8.5
+    border-none
+    rounded-full
+    cursor-pointer
+    transition-all
+    duration-300
+    ease-in-out
+    hover:bg-gold-soft
+    hover:-translate-y-0.5
+    font-bold
+}
+
+.visita-cta svg {
+    @apply
+    w-4
+    h-4
+}
+
+/* HOURS TABLE */
+.hours {
+    @apply
+    grid
+    grid-cols-[1fr_auto]
+    gap-[14px_28px]
+    font-serif
+    text-[19px]
+}
+
+.hours .day {
+    font-variant-caps: all-small-caps;
+    @apply
+    text-[rgba(241,234,212,0.78)]
+    tracking-[0.12em]
+}
+
+.hours .time {
+    @apply
+    text-cream
+    text-right
+}
+
+.hours .closed {
+    @apply
+    text-rust
+    italic
+}
+
+.hours .today {
+    @apply
+    text-gold-soft
+}
+
+.hours .day.today::before {
+    @apply
+    sm:content-["●_"]
+    text-gold-soft
+}
+
+/* MAP CARD */
+.map-card {
+    @apply
+    relative
+    rounded-sm
+    aspect-4/5
+    bg-ink-2
+    border
+    border-[rgba(241,234,212,0.12)]
+}
+
+.map-card svg {
+    @apply
+    w-full
+    h-full
+    block
+}
+
+.map-marker {
+    @apply
+    absolute
+    left-1/2
+    top-[48%]
+    translate-x-[-50%]
+    translate-y-[-50%]
+    z-3
+}
+
+.map-marker .pin {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+    @apply
+    w-9
+    h-9
+    rounded-[50%_50%_50%_0]
+    bg-gold
+    -rotate-45
+    flex 
+    justify-center 
+    items-center
+    relative
+    z-1
+
+    after:w-2.5
+    after:h-2.5
+    after:rounded-full
+    after:bg-ink
+}
+
+.map-marker .pulse {
+    @apply
+    absolute
+    left-1/2
+    top-1/2
+    w-9
+    h-9
+    bg-gold
+    -mt-4.5
+    -ml-4.5
+    rounded-full
+    z-0
+    opacity-40
+    animate-[markerPulse_2.2s_ease-out_infinite]
+}
+@keyframes markerPulse {
+    0% { transform: scale(1); opacity: 0.4; }
+    100% { transform: scale(3); opacity: 0; }
+}
+
+.map-overlay {
+    @apply
+    absolute
+    left-5
+    bottom-5
+    bg-[rgba(29,51,39,0.85)]
+    backdrop-blur-[6px]
+    py-3.5
+    px-4.5
+    rounded-xs
+    font-serif
+    text-[15px]
+    text-cream
+    tracking-wider
+    border-l-2 border-gold
+}
+
+.map-overlay small {
+    @apply
+    block
+    font-sans
+    text-[10px]
+    tracking-[.24em]
+    text-gold-soft
+    uppercase
+    mb-1
+}
