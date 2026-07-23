@@ -1,7 +1,7 @@
 const translations = {
     it: {
         announce: ["Nuova Apertura", "Torino", "Via Cernaia 3", "Aperti da luglio 2026", "Prenotazioni Aperte"],
-        nav: { filosofia: "Filosofia", menu: "Il Menù", spazio: "Lo Spazio", visita: "Visita", prenota: "Prenota" },
+        nav: { filosofia: "Filosofia", menu: "Il Menù", spazio: "Lo Spazio", visita: "Visita", prenota: "SHOP" },
         hero: {
             eyebrow: "Gastronomia · Torino · 2026",
             sub: "Gastronomia",
@@ -84,7 +84,7 @@ const translations = {
 
     en: {
         announce: ["New Opening", "Turin", "Via Cernaia 3", "Open from November 2026", "Reservations Open"],
-        nav: { filosofia: "Philosophy", menu: "Menu", spazio: "The Space", visita: "Visit", prenota: "Book" },
+        nav: { filosofia: "Philosophy", menu: "Menu", spazio: "The Space", visita: "Visit", prenota: "SHOP" },
         hero: {
             eyebrow: "Gastronomy · Turin · 2026",
             sub: "Gastronomy",
@@ -167,7 +167,7 @@ const translations = {
 
     fr: {
         announce: ["Nouvelle Ouverture", "Turin", "Via Cernaia 3", "Ouvert dès Novembre 2026", "Réservations Ouvertes"],
-        nav: { filosofia: "Philosophie", menu: "Le Menu", spazio: "L'Espace", visita: "Visiter", prenota: "Réserver" },
+        nav: { filosofia: "Philosophie", menu: "Le Menu", spazio: "L'Espace", visita: "Visiter", prenota: "SHOP" },
         hero: {
             eyebrow: "Gastronomie · Turin · 2026",
             sub: "Gastronomie",
@@ -250,7 +250,7 @@ const translations = {
 
     es: {
         announce: ["Nueva Apertura", "Turín", "Via Cernaia 3", "Abierto desde Noviembre 2026", "Reservas Abiertas"],
-        nav: { filosofia: "Filosofía", menu: "El Menú", spazio: "El Espacio", visita: "Visitar", prenota: "Reservar" },
+        nav: { filosofia: "Filosofía", menu: "El Menú", spazio: "El Espacio", visita: "Visitar", prenota: "SHOP" },
         hero: {
             eyebrow: "Gastronomía · Turín · 2026",
             sub: "Gastronomía",

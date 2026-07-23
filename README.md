@@ -6,3 +6,5 @@
 6. sistemare il sax da mobile che tocchi e se ne va
 7. luglio e agosto e e festività aperti 7 su 7 e nel resto dell'anno lun-sab
 8. statistiche sito # ottoni
+9. tastino mail per comunicazioni, collab o cathering
+10. shop su whatsapp 

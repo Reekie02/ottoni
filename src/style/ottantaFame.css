@@ -10,24 +10,30 @@
     relative
     border-b border-t
     border-[rgba(29,51,39,0.2)]
+    flex flex-col items-center
 }
 
 .band-marquee {
-    animation: marquee 30s linear infinite;
     @apply
     flex
     gap-17.5
-    whitespace-nowrap
     hover:[animation-play-state:paused]
+    /* animate-[marquee_2s_linear_infinite] */
 }
+
+/* @keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+} */
 
 .band-item {
     @apply
-    inline-flex
+    flex
     items-center
-    gap-17.5
     font-serif
-    text-[clamp(56px,9vw,130px)]
+    /* text-[clamp(56px,9vw,130px)] */
+    text-4xl
+    px-3
     font-semibold
     tracking-[0.04em]
     leading-none

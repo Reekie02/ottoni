@@ -18,7 +18,7 @@ export default function Hero() {
     }, []);
     return (
         <header className="hero" id="top">
-            <div ref={ref} className="absolute top-1/5 md:top-[40%] md:left-1/2 w-full md:w-[50%]">
+            <div className="absolute top-1/5 md:top-[15%] w-full md:w-[50%]">
                 <HeroSax />
             </div>
             <div className="eyebrow hero-eyebrow">{t.hero.eyebrow}</div>

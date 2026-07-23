@@ -1,3 +1,4 @@
+import { ShoppingCart } from "lucide-react";
 import { useLang } from "../i18n/LangContext";
 import "../style/footer.css";
 
@@ -11,7 +12,7 @@ export default function Footer() {
                     <div className="foot-meta" style={{ color: "var(--gold-soft)", marginTop: 4, fontSize: 10 }}>{t.foot.sub}</div>
                 </div>
                 <div className="foot-social">
-                    <a href="#" aria-label="Instagram">
+                    <a href="https://www.instagram.com/ottonigastronomia/" aria-label="Instagram">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="3" y="3" width="18" height="18" rx="4" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" /></svg>
                     </a>
                     <a href="#" aria-label="WhatsApp">
@@ -20,12 +21,9 @@ export default function Footer() {
                         </svg>
                     </a>
                     <a href="#" aria-label="Web">
-                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M2 12h20" />
-                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
-                        </svg>
+                        <ShoppingCart size={18} />
                     </a>
+
                 </div>
                 <div className="foot-meta">{t.foot.meta}</div>
             </div>

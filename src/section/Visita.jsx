@@ -8,13 +8,13 @@ export default function Visita() {
     const { t } = useLang();
     const today = new Date().getDay();
     const HOURS_DATA = [
-        { time: t.visita.chiuso, closed: true, idx: 1 },
-        { time: "12:00 — 15:00 · 19:00 — 23:00", idx: 2 },
-        { time: "12:00 — 15:00 · 19:00 — 23:00", idx: 3 },
-        { time: "12:00 — 15:00 · 19:00 — 23:00", idx: 4 },
-        { time: "12:00 — 15:00 · 19:00 — 24:00", idx: 5 },
-        { time: "12:00 — 24:00", idx: 6 },
-        { time: "12:00 — 16:00", idx: 0 },
+        { time: "12:00 — 21:30", idx: 0 },
+        { time: "12:00 — 21:30", idx: 2 },
+        { time: "12:00 — 21:30", idx: 3 },
+        { time: "12:00 — 21:30", idx: 4 },
+        { time: "12:00 — 21:30", idx: 5 },
+        { time: "12:00 — 17:00", idx: 6 },
+        { time: t.visita.chiuso, closed: true, idx: 0 },
     ];
     return (
         <section id="visita" className="visita">
@@ -44,10 +44,7 @@ export default function Visita() {
                         </div>
                     </div>
 
-                    <button className="visita-cta" onClick={() => window.open("mailto:info@ottoni-gastronomia.it")}>
-                        {t.visita.cta}
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M13 6l6 6-6 6" strokeLinecap="round" strokeLinejoin="round" /></svg>
-                    </button>
+
                 </Reveal>
 
                 <Reveal delay={150}>

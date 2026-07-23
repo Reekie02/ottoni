@@ -16,7 +16,6 @@ export default function Philosophy() {
                 <Reveal delay={150}>
                     <div className="filosofia-body">
                         <p>{t.filosofia.p1}</p>
-                        <p>{t.filosofia.p2}</p>
                         <div className="filosofia-sig">{t.filosofia.sig}</div>
                     </div>
                 </Reveal>
