@@ -399,3 +399,39 @@
     hover:border-gold
 }
 
+.menu-pdf-link{
+    @apply
+    flex
+    items-center
+    justify-center
+    translate-x-[60%]
+}
+
+.menu-pdf-link-text{
+    @apply
+    text-sm
+    uppercase
+    p-2
+    pl-6
+    bg-moss
+    relative
+    right-5
+    z-10
+    rounded-tr-2xl
+    text-paper
+    font-bold
+}
+
+.menu-pdf-link-icon{
+    @apply
+    bg-ink
+    text-paper
+    px-0.5
+    rounded-full
+    cursor-pointer
+    transition-colors
+    duration-250
+    ease-in
+    relative
+    z-20
+}

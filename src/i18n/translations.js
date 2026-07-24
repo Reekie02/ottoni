@@ -421,50 +421,50 @@ export const LANG_LABELS = { it: 'IT', en: 'EN', fr: 'FR', es: 'ES', zh: '中文
 export const MENU = {
     romana: {
         items: [
-            { name: "Carbonara", price: "12,90€", descKey: "carbonara" },
-            { name: "Amatriciana", price: "12,50€", descKey: "amatriciana" },
-            { name: "Gricia", price: "12,90€", descKey: "gricia" },
-            { name: "Cacio e Pepe", price: "11,90€", descKey: "caciopepe" },
+            { name: "Carbonara", price: "9,50€", descKey: "carbonara" },
+            { name: "Amatriciana", price: "9,50€", descKey: "amatriciana" },
+            { name: "Gricia", price: "9,00€", descKey: "gricia" },
+            { name: "Cacio e Pepe", price: "9,50€", descKey: "caciopepe" },
         ],
     },
     nonna: {
         items: [
-            { name: "Mezze maniche rigate alla Norma", price: "12,90€", descKey: "norma" },
-            { name: "Spaghetti alla chitarra aglio, olio e peperoncino", price: "12,50€", descKey: "agliolio" },
-            { name: "Trofie al pesto, patate e fagiolini", price: "12,90€", descKey: "pesto" },
-            { name: "Tagliatelle al basilico al ragù", price: "11,90€", descKey: "raguCarne" },
-            { name: "Tagliatelle al basilico al ragù di verdure", price: "11,90€", descKey: "raguVerdure", tag: "veg" },
-            { name: "Orecchiette alla Nerano", price: "9,90€", descKey: "nerano", tag: "veg" },
-            { name: "Spaghetti alla chitarra al tonno", price: "10,90€", descKey: "tonno" },
+            { name: "Mezze maniche rigate alla Norma", price: "9,00€", descKey: "norma" },
+            { name: "Spaghetti alla chitarra aglio, olio e peperoncino", price: "7,00€", descKey: "agliolio" },
+            { name: "Trofie al pesto, patate e fagiolini", price: "9,00€", descKey: "pesto" },
+            { name: "Tagliatelle al basilico al ragù", price: "10,50€", descKey: "raguCarne" },
+            { name: "Mezze maniche rigate al ragù di verdure", price: "9,00€", descKey: "raguVerdure", tag: "veg" },
+            { name: "Trofie alla Nerano", price: "10,50€", descKey: "nerano", tag: "veg" },
+            { name: "Spaghetti alla chitarra al tonno", price: "9,00€", descKey: "tonno" },
         ],
     },
     ripiena: {
         items: [
-            { name: "Agnolotti alla piemontese al ragù", price: "12,90€", descKey: "agnolotti" },
-            { name: "Ravioli ricotta e spinaci, burro e salvia", price: "12,90€", descKey: "ravioli", tag: "veg" },
+            { name: "Agnolotti alla piemontese al ragù", price: "12,50€", descKey: "agnolotti" },
+            { name: "Ravioli ricotta e spinaci, burro e salvia", price: "11,50€", descKey: "ravioli", tag: "veg" },
         ],
     },
     secondi: {
         items: [
-            { name: "Scaloppine al limone", price: "13,50€", descKey: "scaloppine" },
-            { name: "Cotoletta di pollo", price: "12,90€", descKey: "cotoletta" },
-            { name: "Polpette della nonna", price: "11,90€", descKey: "polpette" },
-            { name: "Parmigiana di melanzane", price: "10,90€", descKey: "parmigiana", tag: "veg" },
-            { name: "Polpettine di tofu, ceci e lenticchie", price: "10,50€", descKey: "tofu", tag: "veg" },
+            { name: "Scaloppine al limone", price: "9,50€", descKey: "scaloppine" },
+            { name: "Cotoletta di pollo", price: "10,50€", descKey: "cotoletta" },
+            { name: "Polpette della nonna", price: "11,50€", descKey: "polpette" },
+            { name: "Parmigiana di melanzane", price: "10,00€", descKey: "parmigiana", tag: "veg" },
+            { name: "Polpettine di tofu, ceci e lenticchie", price: "11,50€", descKey: "tofu", tag: "veg" },
         ],
     },
     contorni: {
         items: [
-            { name: "Patate al forno", price: "4,50€", descKey: "patate" },
-            { name: "Verdure grigliate", price: "5,50€", descKey: "verdure" },
+            { name: "Patate al forno", price: "4,00€", descKey: "patate" },
+            { name: "Verdure grigliate", price: "4,50€", descKey: "verdure" },
             { name: "Lattughino e pomodoro", price: "4,50€", descKey: "lattughino" },
         ],
     },
     insalate: {
         items: [
-            { name: "L'Insalatona", price: "10,90€", descKey: "insalatona" },
-            { name: "L'Insalata Caesar", price: "10,90€", descKey: "caesar" },
-            { name: "L'Insalata di Nonna Rosa", price: "9,90€", descKey: "nonnarosa", tag: "veg" },
+            { name: "L'Insalatona", price: "7,50€", descKey: "insalatona" },
+            { name: "L'Insalata Caesar", price: "8,50€", descKey: "caesar" },
+            { name: "L'Insalata di Nonna Rosa", price: "7,50€", descKey: "nonnarosa", tag: "veg" },
         ],
     },
 };

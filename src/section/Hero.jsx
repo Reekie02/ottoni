@@ -18,12 +18,14 @@ export default function Hero() {
     }, []);
     return (
         <header className="hero" id="top">
-            <div className="absolute top-1/5 md:top-[15%] w-full md:w-[50%]">
-                <HeroSax />
+            <div className="relative">
+                <div className="absolute top-1/2 left-1/2 translate-y-[-50%] translate-x-[-50%] w-[140%] lg:w-[90%] h-full flex justify-center items-center pointer-events-none">
+                    <HeroSax />
+                </div>
+                <div className="eyebrow hero-eyebrow">{t.hero.eyebrow}</div>
+                <Wordmark />
+                <div className="hero-sub divider-leaf"><span className="smallcaps">{t.hero.sub}</span></div>
             </div>
-            <div className="eyebrow hero-eyebrow">{t.hero.eyebrow}</div>
-            <Wordmark />
-            <div className="hero-sub divider-leaf"><span className="smallcaps">{t.hero.sub}</span></div>
             <p className="hero-tagline">
                 {t.hero.tagline1}<br />{t.hero.tagline2} <em style={{ fontFamily: "var(--serif)" }}>{t.hero.tagline3}</em>
             </p>
