@@ -404,7 +404,8 @@
     flex
     items-center
     justify-center
-    translate-x-[60%]
+    md:translate-x-[60%]
+    translate-x-[2.5%]
 }
 
 .menu-pdf-link-text{
