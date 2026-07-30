@@ -34,6 +34,7 @@ const translations = {
                 insalate: { title: "Le Insalate" },
             },
             note: "Il menu cambia con le stagioni.",
+            cta: "scarica il menù completo"
         },
         band: { pre: "Con un supplemento di", amount: "2,50€", mid: "puoi avere la", big: "maxi porzione di pasta!" },
         spazio: {
@@ -117,6 +118,7 @@ const translations = {
                 insalate: { title: "Salads" },
             },
             note: "The menu changes with the seasons.",
+            cta: "download full menu"
         },
         band: { pre: "For a supplement of", amount: "€2.50", mid: "you can have the", big: "maxi portion of pasta!" },
         spazio: {
@@ -200,6 +202,7 @@ const translations = {
                 insalate: { title: "Salades" },
             },
             note: "Le menu change avec les saisons.",
+            cta: "télécharger le menu complet",
         },
         band: { pre: "Pour un supplément de", amount: "2,50€", mid: "vous pouvez avoir la", big: "maxi portion de pâtes!" },
         spazio: {
@@ -283,6 +286,7 @@ const translations = {
                 insalate: { title: "Ensaladas" },
             },
             note: "El menú cambia con las estaciones.",
+            cta: "descargar el menú completo",
         },
         band: { pre: "Con un suplemento de", amount: "2,50€", mid: "puedes tener la", big: "maxi porción de pasta!" },
         spazio: {
@@ -366,6 +370,7 @@ const translations = {
                 insalate: { title: "沙拉" },
             },
             note: "菜单随季节变化。",
+            cta: "下载完整菜单",
         },
         band: { pre: "加", amount: "2.50€", mid: "即可享用", big: "超大份面食！" },
         spazio: {

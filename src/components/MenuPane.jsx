@@ -1,8 +1,11 @@
 import MenuSectionPane from "./MenuSectionPane";
 import menu from "../../public/menu.pdf"
 import { ArrowDown, Download } from "lucide-react";
+import { useLang } from "../i18n/LangContext";
+
 
 export default function MenuPane({ tab, MENU, TAB_IDS }) {
+    const { t } = useLang();
     const tabData = TAB_IDS.find(tb => tb.id === tab);
 
     if (tabData.columnGroups) {
@@ -18,7 +21,7 @@ export default function MenuPane({ tab, MENU, TAB_IDS }) {
                     download="Menu_Ottoni_Gastronomia.pdf"
                 >
                     <ArrowDown size={45} className="menu-pdf-link-icon" />
-                    <span className="menu-pdf-link-text">Scarica il menù completo</span>
+                    <span className="menu-pdf-link-text">{t.menu.cta}</span>
                 </a>
             </div>
         );
