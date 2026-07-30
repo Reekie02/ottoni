@@ -33,8 +33,8 @@ export default function Spazio() {
                         </div>
                     ))}
                 </div> */}
-                <div className="tile w-[70%] m-auto h-80 overflow-hidden border-8 rounded-md! shadow-[0_0_10px_black]!">
-                    <div className="bg-cover w-full h-full prova [transition:transform_1.2s_cubic-bezier(0.2,0.7,0.2,1)]" style={{ backgroundImage: `url(${photo1})` }} />
+                <div className="tile w-[80%] lg:w-[50%] m-auto h-80 md:h-120 overflow-hidden border-8 rounded-md! shadow-[0_0_10px_black]!">
+                    <div className="bg-cover bg-center w-full h-full prova [transition:transform_1.2s_cubic-bezier(0.2,0.7,0.2,1)]" style={{ backgroundImage: `url(${photo1})` }} />
                     <div className="tile-label">Ottoni Gastronomia</div>
                 </div>
             </Reveal>
