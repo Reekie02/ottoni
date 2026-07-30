@@ -441,7 +441,7 @@ export const MENU = {
     ripiena: {
         items: [
             { name: "Agnolotti alla piemontese al ragù", price: "12,50€", descKey: "agnolotti" },
-            { name: "Ravioli ricotta e spinaci, burro e salvia", price: "11,50€", descKey: "ravioli", tag: "veg" },
+            { name: "Ravioli ricotta e spinaci, burro e salvia", price: "11,50€", descKey: "ravioli" },
         ],
     },
     secondi: {
