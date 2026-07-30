@@ -1,18 +1,19 @@
 import Reveal from "../components/Reveal";
 import { useLang } from "../i18n/LangContext";
 import "../style/spazio.css";
+import photo1 from "../assets/images/photo1.jpg";
 
 export default function Spazio() {
 
     const { t } = useLang();
 
     const TILE_IMGS = [
-        { cls: "tile-a", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&auto=format&fit=crop" },
-        { cls: "tile-b", img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=900&auto=format&fit=crop" },
-        { cls: "tile-c", img: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&auto=format&fit=crop" },
-        { cls: "tile-d", img: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=900&auto=format&fit=crop" },
-        { cls: "tile-e", img: "https://images.unsplash.com/photo-1587740908075-9e245070dfaa?w=900&auto=format&fit=crop" },
-        { cls: "tile-f", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=900&auto=format&fit=crop" },
+        // { cls: "Ottoni Gastronomia", img: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1400&auto=format&fit=crop" },
+        // { cls: "tile-b", img: "https://images.unsplash.com/photo-1551183053-bf91a1d81141?w=900&auto=format&fit=crop" },
+        // { cls: "tile-c", img: "https://images.unsplash.com/photo-1559925393-8be0ec4767c8?w=900&auto=format&fit=crop" },
+        // { cls: "tile-d", img: "https://images.unsplash.com/photo-1612874742237-6526221588e3?w=900&auto=format&fit=crop" },
+        // { cls: "tile-e", img: "https://images.unsplash.com/photo-1587740908075-9e245070dfaa?w=900&auto=format&fit=crop" },
+        // { cls: "tile-f", img: "https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=900&auto=format&fit=crop" },
     ];
 
     return (
@@ -24,13 +25,17 @@ export default function Spazio() {
                 </div>
             </Reveal>
             <Reveal delay={100}>
-                <div className="gallery">
+                {/* <div className="gallery">
                     {TILE_IMGS.map((tile, i) => (
                         <div className={`tile ${tile.cls}`} key={i}>
                             <div className="tile-img" style={{ backgroundImage: `url(${tile.img})` }} />
                             <div className="tile-label">{t.spazio.tiles[i]}</div>
                         </div>
                     ))}
+                </div> */}
+                <div className="tile w-[70%] m-auto h-80 overflow-hidden border-8 rounded-md! shadow-[0_0_10px_black]!">
+                    <div className="bg-cover w-full h-full prova [transition:transform_1.2s_cubic-bezier(0.2,0.7,0.2,1)]" style={{ backgroundImage: `url(${photo1})` }} />
+                    <div className="tile-label">Ottoni Gastronomia</div>
                 </div>
             </Reveal>
         </section>

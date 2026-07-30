@@ -421,6 +421,8 @@
     rounded-tr-2xl
     text-paper
     font-bold
+    shadow-[3px_4px_0px_0px]
+    shadow-gold
 }
 
 .menu-pdf-link-icon{
@@ -430,9 +432,19 @@
     px-0.5
     rounded-full
     cursor-pointer
-    transition-colors
-    duration-250
-    ease-in
     relative
     z-20
+}
+
+.menu-pdf-link-icon::after{
+    @apply
+    absolute
+    content-[""]
+    w-[20px]
+    h-[20px]
+    bg-paper
+    top-10
+    -right-20
+    z-[999]
+    rounded-br-xl
 }
