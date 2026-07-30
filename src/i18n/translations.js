@@ -1,6 +1,6 @@
 const translations = {
     it: {
-        announce: ["Nuova Apertura", "Torino", "Via Cernaia 3", "Aperti da luglio 2026", "Prenotazioni Aperte"],
+        announce: ["Nuova Apertura", "Torino", "Via Cernaia 3", "Aperti da luglio 2026"],
         nav: { filosofia: "Filosofia", menu: "Il Menù", spazio: "Lo Spazio", visita: "Visita", prenota: "SHOP" },
         hero: {
             eyebrow: "Gastronomia · Torino · 2026",
