@@ -24,7 +24,7 @@ export default function OttantaFame() {
                 {/* {Array.from({ length: 6 }).map((_, i) => ( */}
                 <span className="band-item" >
 
-                    <span className="text-center"><span className="text-gold-soft">SAPORI FUORI MENU, INGREDIENTI DI STAGIONE E IDEE DEL GIORNO </span> <br /> TI ASPETTANO SULLA NOSTRA LAVAGNA</span>
+                    <span className="text-center">{t.band.desc1}<br /> <span className="text-gold-soft">{t.band.desc2}</span></span>
 
                 </span>
                 {/* ))} */}

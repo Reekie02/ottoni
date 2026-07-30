@@ -36,7 +36,7 @@ const translations = {
             note: "Il menu cambia con le stagioni.",
             cta: "scarica il menù completo"
         },
-        band: { pre: "Con un supplemento di", amount: "2,50€", mid: "puoi avere la", big: "maxi porzione di pasta!" },
+        band: { pre: "Con un supplemento di", amount: "2,50€", mid: "puoi avere la", big: "maxi porzione di pasta!", desc1: "SAPORI FUORI MENU, INGREDIENTI DI STAGIONE E IDEE DEL GIORNO", desc2: "TI ASPETTANO SULLA NOSTRA LAVAGNA" },
         spazio: {
             eyebrow: "— Lo Spazio",
             title: "Tra Suono e Sapore",
@@ -120,7 +120,7 @@ const translations = {
             note: "The menu changes with the seasons.",
             cta: "download full menu"
         },
-        band: { pre: "For a supplement of", amount: "€2.50", mid: "you can have the", big: "maxi portion of pasta!" },
+        band: { pre: "For a supplement of", amount: "€2.50", mid: "you can have the", big: "maxi portion of pasta!", desc1: "OFF-MENU FLAVOURS, SEASONAL INGREDIENTS AND DAILY SPECIALS", desc2: "ARE WAITING FOR YOU ON OUR BLACKBOARD" },
         spazio: {
             eyebrow: "— The Space",
             title: "Between Sound and Flavour",
@@ -204,7 +204,7 @@ const translations = {
             note: "Le menu change avec les saisons.",
             cta: "télécharger le menu complet",
         },
-        band: { pre: "Pour un supplément de", amount: "2,50€", mid: "vous pouvez avoir la", big: "maxi portion de pâtes!" },
+        band: { pre: "Pour un supplément de", amount: "2,50€", mid: "vous pouvez avoir la", big: "maxi portion de pâtes!", desc1: "SAVEURS HORS MENU, SAVEURS DE SAISON ET IDÉES DU JOUR ", desc2: "VOUS ATTENDENT SUR NOTRE TABLEAU NOIR" },
         spazio: {
             eyebrow: "— L'Espace",
             title: "Entre Son et Saveur",
@@ -288,7 +288,7 @@ const translations = {
             note: "El menú cambia con las estaciones.",
             cta: "descargar el menú completo",
         },
-        band: { pre: "Con un suplemento de", amount: "2,50€", mid: "puedes tener la", big: "maxi porción de pasta!" },
+        band: { pre: "Con un suplemento de", amount: "2,50€", mid: "puedes tener la", big: "maxi porción de pasta!", desc1: "SABORES FUERA DE CARTA, INGREDIENTES DE TEMPORADA E IDEAS DEL DÍA", desc2: "TE ESPERAN EN NUESTRA PIZARRA" },
         spazio: {
             eyebrow: "— El Espacio",
             title: "Entre Sonido y Sabor",
@@ -372,7 +372,7 @@ const translations = {
             note: "菜单随季节变化。",
             cta: "下载完整菜单",
         },
-        band: { pre: "加", amount: "2.50€", mid: "即可享用", big: "超大份面食！" },
+        band: { pre: "加", amount: "2.50€", mid: "即可享用", big: "超大份面食！", desc1: "菜单之外的风味，季节性食材和每日创意", desc2: "正在我们的黑板上等待您" },
         spazio: {
             eyebrow: "— 空间",
             title: "声音与美味之间",
