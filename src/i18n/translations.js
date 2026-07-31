@@ -110,6 +110,7 @@ const translations = {
             sfoglia: "Browse it digitally",
             zoom: "Tap to enlarge",
             tabs: ["First Courses", "Main Courses", "Side Dishes", "Salads"],
+            note1: "Available in standard or maxi size (+2.50€)",
             sections: {
                 romana: { title: "From Roman Tradition", note: "Chitarra or Mezza Manica — your choice of pasta" },
                 nonna: { title: "Grandma's Way" },
@@ -194,6 +195,7 @@ const translations = {
             sfoglia: "Parcourez-le en ligne",
             zoom: "Toucher pour agrandir",
             tabs: ["Premiers Plats", "Plats Principaux", "Accompagnements", "Salades"],
+            note1: "Disponible en format normal ou maxi (+2,50€)",
             sections: {
                 romana: { title: "De la Tradition Romaine", note: "Chitarra ou Mezza Manica — votre choix de pâtes" },
                 nonna: { title: "Comme le Faisait Grand-Mère" },
@@ -278,6 +280,7 @@ const translations = {
             sfoglia: "Hojéalo digitalmente",
             zoom: "Toca para ampliar",
             tabs: ["Primeros Platos", "Segundos Platos", "Guarniciones", "Ensaladas"],
+            note1: "Disponible en tamaño normal o maxi (+2,50€)",
             sections: {
                 romana: { title: "De la Tradición Romana", note: "Chitarra o Mezza Manica — elige tu formato" },
                 nonna: { title: "Como lo Hacía la Abuela" },
@@ -362,6 +365,7 @@ const translations = {
             sfoglia: "在线浏览",
             zoom: "点击放大",
             tabs: ["面食", "主菜", "配菜", "沙拉"],
+            note1: "提供标准或特大份量 (+2.50€)",
             sections: {
                 romana: { title: "罗马传统", note: "Chitarra或Mezza Manica — 选择您喜欢的面型" },
                 nonna: { title: "奶奶的味道" },
