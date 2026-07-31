@@ -25,8 +25,9 @@ const translations = {
             sfoglia: "Sfoglialo digitalmente",
             zoom: "Tocca per ingrandire",
             tabs: ["I Nostri Primi", "I Secondi", "I Contorni", "Le Insalate"],
+            note1: "Disponibili in formato normale o maxi (+2,50€)",
             sections: {
-                romana: { title: "Dalla Tradizione Romana", note: "Tonnarello o Mezza Manica — scegli tu il formato" },
+                romana: { title: "Dalla Tradizione Romana", note: "Chitarra o Mezza Manica — scegli tu il formato" },
                 nonna: { title: "Come Li Faceva la Nonna" },
                 ripiena: { title: "Pasta Ripiena" },
                 secondi: { title: "I Secondi" },
@@ -110,7 +111,7 @@ const translations = {
             zoom: "Tap to enlarge",
             tabs: ["First Courses", "Main Courses", "Side Dishes", "Salads"],
             sections: {
-                romana: { title: "From Roman Tradition", note: "Tonnarello or Mezza Manica — your choice of pasta" },
+                romana: { title: "From Roman Tradition", note: "Chitarra or Mezza Manica — your choice of pasta" },
                 nonna: { title: "Grandma's Way" },
                 ripiena: { title: "Filled Pasta" },
                 secondi: { title: "Main Courses" },
@@ -194,7 +195,7 @@ const translations = {
             zoom: "Toucher pour agrandir",
             tabs: ["Premiers Plats", "Plats Principaux", "Accompagnements", "Salades"],
             sections: {
-                romana: { title: "De la Tradition Romaine", note: "Tonnarello ou Mezza Manica — votre choix de pâtes" },
+                romana: { title: "De la Tradition Romaine", note: "Chitarra ou Mezza Manica — votre choix de pâtes" },
                 nonna: { title: "Comme le Faisait Grand-Mère" },
                 ripiena: { title: "Pâtes Farcies" },
                 secondi: { title: "Plats Principaux" },
@@ -278,7 +279,7 @@ const translations = {
             zoom: "Toca para ampliar",
             tabs: ["Primeros Platos", "Segundos Platos", "Guarniciones", "Ensaladas"],
             sections: {
-                romana: { title: "De la Tradición Romana", note: "Tonnarello o Mezza Manica — elige tu formato" },
+                romana: { title: "De la Tradición Romana", note: "Chitarra o Mezza Manica — elige tu formato" },
                 nonna: { title: "Como lo Hacía la Abuela" },
                 ripiena: { title: "Pasta Rellena" },
                 secondi: { title: "Segundos Platos" },
@@ -362,7 +363,7 @@ const translations = {
             zoom: "点击放大",
             tabs: ["面食", "主菜", "配菜", "沙拉"],
             sections: {
-                romana: { title: "罗马传统", note: "Tonnarello或Mezza Manica — 选择您喜欢的面型" },
+                romana: { title: "罗马传统", note: "Chitarra或Mezza Manica — 选择您喜欢的面型" },
                 nonna: { title: "奶奶的味道" },
                 ripiena: { title: "馅料面食" },
                 secondi: { title: "主菜" },
@@ -429,7 +430,7 @@ export const MENU = {
             { name: "Carbonara", price: "9,50€", descKey: "carbonara" },
             { name: "Amatriciana", price: "9,50€", descKey: "amatriciana" },
             { name: "Gricia", price: "9,00€", descKey: "gricia" },
-            { name: "Cacio e Pepe", price: "9,50€", descKey: "caciopepe" },
+            { name: "Cacio e Pepe", price: "8,50€", descKey: "caciopepe" },
         ],
     },
     nonna: {
@@ -452,7 +453,7 @@ export const MENU = {
     secondi: {
         items: [
             { name: "Scaloppine al limone", price: "9,50€", descKey: "scaloppine" },
-            { name: "Cotoletta di pollo", price: "10,50€", descKey: "cotoletta" },
+            { name: "Cotoletta di pollo", price: "8,50€", descKey: "cotoletta" },
             { name: "Polpette della nonna", price: "11,50€", descKey: "polpette" },
             { name: "Parmigiana di melanzane", price: "10,00€", descKey: "parmigiana", tag: "veg" },
             { name: "Polpettine di tofu, ceci e lenticchie", price: "11,50€", descKey: "tofu", tag: "veg" },
@@ -469,7 +470,7 @@ export const MENU = {
         items: [
             { name: "L'Insalatona", price: "7,50€", descKey: "insalatona" },
             { name: "L'Insalata Caesar", price: "8,50€", descKey: "caesar" },
-            { name: "L'Insalata di Nonna Rosa", price: "7,50€", descKey: "nonnarosa", tag: "veg" },
+            { name: "L'Insalata di Nonna Rosa", price: "6,50€", descKey: "nonnarosa", tag: "veg" },
         ],
     },
 };
