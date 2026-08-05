@@ -18,7 +18,7 @@ export default function Menu() {
                 </div>
             </Reveal>
             <Reveal delay={100}>
-                <div className="menu-tabs">
+                <div className={`menu-tabs ${tab === "primi" && "mt-22!"}`}>
                     {TAB_IDS.map((tb, i) => (
                         <button
                             key={tb.id}

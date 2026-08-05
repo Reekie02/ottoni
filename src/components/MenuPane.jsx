@@ -15,7 +15,15 @@ export default function MenuPane({ tab, MENU, TAB_IDS }) {
                 {tabData.columnGroups.map((group, gi) => (
                     <div key={gi} className="menu-col">
                         {/* {tabData.id === "primi" && <p className="absolute -top-12 md:w-[50%] left-10 uppercase bg-moss rounded-tr-2xl p-2 pl-6 text-paper font-bold shadow-[3px_4px_5px_0px] shadow-gold">{t.menu.note1}</p>} */}
-                        {tabData.id === "primi" && <p className="absolute max-nav-md:-top-9 -top-12 max-nav-md:left-0 left-10 uppercase bg-moss rounded-tr-2xl p-2 pl-6 text-paper font-bold shadow-[3px_4px_5px_0px] shadow-gold max-nav-md:text-xs">{t.menu.note1}</p>}
+                        {tabData.id === "primi" &&
+                            <>
+                                <p className="ottantafame">
+                                    {t.menu.note1}
+                                    <span className="slogan"> #OTTANTAFAME</span>
+                                </p>
+                                <p className="maxi">{t.menu?.maxi}</p>
+                            </>
+                        }
                         {group.map(sId => <MenuSectionPane MENU={MENU} key={sId} sId={sId} />)}
                     </div>
                 ))}
